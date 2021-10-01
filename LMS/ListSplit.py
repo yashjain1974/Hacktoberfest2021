@@ -1,4 +1,4 @@
-def listSplit():
+def list():
     global bookname
     global authorname
     global quantity
@@ -7,9 +7,10 @@ def listSplit():
     authorname=[]
     quantity=[]
     cost=[]
-    with open("stock.txt","r") as f:
+    
+    with open("list.txt","r") as books:
         
-        lines=f.readlines()
+        lines=books.readlines()
         lines=[x.strip('\n') for x in lines]
         for i in range(len(lines)):
             ind=0
@@ -23,3 +24,6 @@ def listSplit():
                 elif(ind==3):
                     cost.append(a.strip("$"))
                 ind+=1
+    print(lines)
+    print()
+
