@@ -5,6 +5,7 @@ import Borrow
 
 def start():
     while(True):
+        print("------------------------------------------------------")
         print("        Welcome to the library management system     ")
         print("------------------------------------------------------")
         print("Enter 1. To Display")
@@ -33,4 +34,6 @@ def start():
                 print("Please enter a valid choice from 1-4")
         except ValueError:
             print("Please input as suggested.")
-start()
+if __name__ == '__main__':
+
+    start()
