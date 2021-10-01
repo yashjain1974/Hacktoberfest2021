@@ -1,1 +1,1 @@
-this is repo for opensource contribution for hacktober fest
+This is repo for Open Source Contribution for hacktoberfest.
